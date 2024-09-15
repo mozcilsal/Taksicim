@@ -906,28 +906,7 @@
 
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const iphone = document.querySelector('.iphone');
-
-            function checkVisibility() {
-                const rect = iphone.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    iphone.classList.add('visible');
-                } else {
-                    iphone.classList.remove('visible');
-                }
-            }
-
-            // İlk kontrol
-            checkVisibility();
-
-            // Scroll eventini dinle
-            window.addEventListener('scroll', checkVisibility);
-        });
-    </script>
+    
 
 
 
